@@ -159,9 +159,9 @@
                     <runtime-name>ROOT.war</runtime-name>
                      <packaging-scripts>
                         <packaging-script>
-<!--                       <scripts>
-                            <script>../scripts/script1.cli</script>
-                          </scripts> --> 
+                          <scripts>
+                            <script>../scripts/install-mq.cli</script>
+                          </scripts>
                           <commands>
                             <command>/system-property=music:add(value=skyfall)</command>
                           </commands>
