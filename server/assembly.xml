@@ -3,22 +3,23 @@
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.1 http://maven.apache.org/xsd/assembly-2.1.1.xsd">
     <id>app</id>
     <formats>
-        <format>dir</format>
+        <format>rar</format>
     </formats>
     <includeBaseDirectory>true</includeBaseDirectory>
     <fileSets>
         <fileSet>
             <directory>target/server</directory>
-            <outputDirectory/>
+            <outputDirectory>target/server/standalone/deployments</outputDirectory>
         </fileSet>
     </fileSets>
+
     <dependencySets>
         <dependencySet>
             <includes>
-                <include>net.jmesnil:application1</include>
-                <include>net.jmesnil:application2</include>
+                <include>wmq.jmsra-9.4.2.0.rar</include>
             </includes>
-            <outputDirectory>standalone/deployments</outputDirectory>
+            <outputDirectory>target/server/standalone/deployments</outputDirectory>
         </dependencySet>
     </dependencySets>
+
 </assembly>
